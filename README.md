@@ -1,0 +1,1 @@
+Personal website sources for [lomig.megard.ch](http://lomig.megard.ch).
