@@ -129,7 +129,6 @@ a.pure-button-primary {
  * This represents the content area (everything below the blue section)
  */
 .content-wrapper {
-    width: 500px;
     margin: 0px auto;
     padding-bottom: 30px; /* for the footer */
 
@@ -143,6 +142,10 @@ a.pure-button-primary {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
+}
+
+.content {
+  padding: 1em;
 }
 
 .content-wrapper a {
@@ -219,9 +222,13 @@ ul.social-links li a:focus {
     body {
         font-size: 16px;
     }
-    /* We want to give the content area some more padding */
+
+    .content-wrapper {
+        width: 500px;
+    }
+
     .content {
-        padding: 1em;
+        padding: 0em;
     }
 
     /* We remove the border-separator assigned to .l-box-lrg */
