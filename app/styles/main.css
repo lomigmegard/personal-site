@@ -12,8 +12,8 @@ body {
     line-height: 1.7em;
     font-size: 13px;
 
-    background: url('/images/congruent_pentagon.png') repeat scroll 0% 0% #F9F9F9;
-    background: url('/images/subtle_dots.png') repeat scroll 0% 0% #F9F9F9;
+    background: url('../images/congruent_pentagon.png') repeat scroll 0% 0% #F9F9F9;
+    background: url('../images/subtle_dots.png') repeat scroll 0% 0% #F9F9F9;
 }
 
 h1,
@@ -163,7 +163,7 @@ a.pure-button-primary {
     width: 100px;
     height: 50px;
     margin: -10px auto;
-    background: url('/images/rapier.png') no-repeat scroll left top / 100px 50px transparent;
+    background: url('../images/rapier.png') no-repeat scroll left top / 100px 50px transparent;
     filter: alpha(Opacity=20);
     opacity: 0.2;
 }
