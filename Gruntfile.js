@@ -195,7 +195,10 @@ module.exports = function (grunt) {
         patterns: {
           // FIXME While usemin won't have full support for revved files we have to put all references manually here
           js: [
-              [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JS to reference our revved images']
+            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JS to reference our revved images']
+          ],
+          css: [
+            [ /(?:src=|url\(\s*)['"]?([^'"\)\?#]+)['"]?\s*\)?/gm, 'Update the CSS to reference our revved images']
           ]
         }
       }
