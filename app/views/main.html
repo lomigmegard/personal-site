@@ -1,46 +1,14 @@
 <div class="header">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
         <ul>
-            <li class="pure-menu-selected"><a href="#">Home</a></li>
-            <li><a href="#">Tour</a></li>
+            <li ng-class="{ 'pure-menu-selected': $state.is('home') }"><a ui-sref="home">Home</a></li>
+            <li ng-class="{ 'pure-menu-selected': $state.is('tour') }"><a ui-sref="tour">Tour</a></li>
         </ul>
     </div>
 </div>
 
 <div class="content-wrapper">
-    <div class="content">
-        <h2 class="content-head is-center">Lomig Mégard</h2>
-
-        <div class="rapier"></div>
-
-        <p>
-          Student at <a target="_blank" href="http://www.epfl.ch/" alt="EPFL website">EPFL</a> in Computer Science, I will obtain my Master in July 2014.
-          I have a specialization in <a target="_blank" href="http://ic.epfl.ch/specializations" alt="Specializations at EPFL">Foundation of Software</a> and I'm currently doing my Master Thesis in the field of Programming by Example in the <a target="_blank" href="http://lara.epfl.ch" alt="LARA lab" title="Lab for Automated Reasoning and Analysis">LARA</a> lab.
-        </p>
-
-        <p>
-          Besides the theory of languages, I'm also interested in static analysis and compiler construction.
-          I like to work with technologies like <a target="_blank" href="http://scala-lang.org/" alt="Scala website">Scala</a>, Java or <a target="_blank" href="http://akka.io/" alt="Akka website">Akka</a> and to manage my projects with <a target="_blank" href="http://scala-sbt.org/" alt="sbt website">sbt</a> and git.
-        </p>
-
-        <ul class="social-links">
-          <li><a target="_blank" href="mailto:contact-lomig@megard.ch" alt="Email address" title="Email address">
-            <i class="fa fa-envelope fa-fw fa-2x"></i>
-          </a></li>
-          <li><a target="_blank" href="https://stackoverflow.com/users/1409677/lomig-megard" alt="StackOverflow profile" title="StackOverflow profile">
-            <i class="fa fa-stack-overflow fa-fw fa-2x"></i>
-          </a></li>
-          <li><a target="_blank" href="https://github.com/tarfaa" alt="Github profile" title="Github profile">
-            <i class="fa fa-github-alt fa-fw fa-2x"></i>
-          </a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/lomigmegard" alt="LinkedIn profile" title="LinkedIn profile">
-            <i class="fa fa-linkedin fa-fw fa-2x"></i>
-          </a></li>
-          <li><a target="_blank" href="https://twitter.com/tarfaa3" alt="Twitter profile" title="Twitter profile">
-            <i class="fa fa-twitter fa-fw fa-2x"></i>
-          </a></li>
-        </ul>
-    </div>
+    <div class="content" ui-view></div>
 
     <div class="footer">
         © Lomig Mégard 2014 -
