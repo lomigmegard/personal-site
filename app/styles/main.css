@@ -121,6 +121,7 @@ a.pure-button-primary {
 .home-menu li a:focus {
     background: none;
     border: none;
+    outline:0;
     color: white;
 }
 
@@ -161,7 +162,13 @@ a.pure-button-primary {
     text-decoration: underline;
     background: none;
     border: none;
+    outline:0;
     color: #0F5A00;
+}
+
+.content-wrapper em {
+  font-style: italic;
+  color: #0F5A00;
 }
 
 .rapier {
@@ -225,7 +232,7 @@ ul.social-links li a:focus {
     }
 
     .content-wrapper {
-        width: 500px;
+        width: 600px;
     }
 
     .content-head {
