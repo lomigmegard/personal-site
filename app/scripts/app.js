@@ -29,9 +29,9 @@ angular.module('personalsiteApp', [
           templateUrl: 'views/home.html'
         })
 
-        .state('tour', {
-          url: '/tour',
-          templateUrl: 'views/tour.html'
+        .state('work', {
+          url: '/work',
+          templateUrl: 'views/work.html'
         });
 
       $locationProvider.html5Mode(true);
