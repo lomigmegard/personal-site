@@ -31,6 +31,7 @@ angular.module('personalsiteApp', [
 
         .state('work', {
           url: '/work',
+          controller: 'WorkCtrl',
           templateUrl: 'views/work.html'
         });
 
