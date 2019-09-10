@@ -1,0 +1,207 @@
+:root {
+    --header-background: #455A64;
+    --header-text: #FFFFFF;
+    --content-background: #CFD8DC;
+    --content-text: #212121;
+    --content-text-link: #009688;
+    --content-social: #757575;
+    --content-social-over: #009688;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] {
+    /*font-family: Georgia, Times, "Times New Roman", serif;*/
+    /*font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;*/
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+
+    font-family: 'PT Serif', serif;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+body {
+    line-height: 1.5em;
+    font-size: 18px;
+
+    background: url('/images/subtle_dots.png') repeat scroll 0% 0% var(--content-background);
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * -- HEADER STYLES --
+ */
+.header {
+
+    /*height: 3em;*/
+
+    font-size: 0.8em;
+    text-align: center;
+    /*vertical-align: middle;*/
+    /*box-shadow: 0 1px 1px rgba(0,0,0, 0.10);*/
+    background: var(--header-background);
+}
+.header .pure-menu .pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+
+    /* I need a higher z-index here because of the scroll-over effect. */
+    /*z-index: 4;*/
+}
+
+.header .pure-menu-selected a {
+    color: var(--header-text);
+    text-decoration: underline;
+}
+
+.header .pure-menu-selected .pure-menu-link:visited {
+    color: var(--header-text);
+}
+
+.header .pure-menu-link {
+    padding: 0.2em 2em;
+    color: var(--header-text);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.header a {
+    color: var(--header-text);
+}
+.header li a:hover,
+.header li a:focus {
+    background: none;
+    border: none;
+    outline:0;
+    color: var(--header-text);
+}
+
+/*
+ * -- FOOTER STYLES --
+ */
+.footer {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+
+    text-align: right;
+    font-size: 9px;
+    filter: alpha(Opacity=50);
+    opacity: 0.5;
+}
+
+/*
+ * -- CONTENT STYLES --
+ */
+.content {
+    margin: 0px auto;
+    /*padding: 1em;*/
+    /*padding-top: 2em;*/
+    padding-bottom: 2em;
+    padding-top: 2em;
+
+    width: 768px;
+
+    color: var(--content-text);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+.content a {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: var(--content-text-link);
+}
+.content a:hover,
+.content a:focus {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    outline:0;
+    color: var(--content-text-link);
+}
+
+.content em {
+    font-style: italic;
+    color: var(--content-text-link);
+}
+
+.cell {
+    margin: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 1.5em 0 1em;
+}
+
+h2 {
+    font-size: 100%;
+    /*font-weight: 400;*/
+    text-align: left;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 0.1em;*/
+    margin: 1em 0 1em;
+}
+
+/*
+ * -- SOCIAL LINKS STYLES --
+ */
+.social-links {
+    list-style: none;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    clear: both;
+    width: 220px;
+    height: 44px;
+}
+
+.social-links li {
+		width: 32px;
+		height: 32px;
+		margin: 5px;
+		float: left;
+		display: block;
+}
+
+.social-links li a {
+    color: var(--content-social);
+}
+.social-links li a:hover,
+.social-links li a:focus {
+    background: none;
+    border: none;
+    color: var(--content-social-over);
+}
+
+@media (max-width: 48em) {
+
+  /*body {
+      font-size: 13px;
+  }*/
+
+  .content {
+      /*padding: 1em;*/
+
+      /*padding-left: 1em;
+      padding-right: 1em;*/
+
+      width: 100%;
+  }
+
+}

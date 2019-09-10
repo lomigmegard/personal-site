@@ -1,0 +1,14 @@
+baseurl = "http://lomig.megard.ch/"
+languageCode = "en-US"
+title = "Lomig Mégard"
+theme = "Golgoth"
+
+# The string {year} will be replaced with the current year
+copyright = "© Lomig Mégard {year}"
+
+# Add a default menu to all sections
+SectionPagesMenu = "main"
+
+[params]
+  #description = "Lomig Mégard's personal site"
+  #author = "Lomig Mégard"
