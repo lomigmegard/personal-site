@@ -1,7 +1,7 @@
 +++
 date = "2017-04-18T15:48:11+02:00"
 title = "Master Thesis"
-
+draft = true
 +++
 
 **Abstract:** Since the first computers, the barrier between the programmer and the user has always been impassable. The complexity of the programming environments and the prior knowledge required forbid any attempt to create own programs and limit the number of developers. With the increasing number of computers, tablets or smartphones, our society has the opportunity to give to each individual the tools to be more independent with respect to programmers.
