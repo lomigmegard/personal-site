@@ -1,4 +1,4 @@
-baseurl = "http://lomig.megard.ch/"
+baseurl = "https://lomig.ch/"
 languageCode = "en-US"
 title = "Lomig Mégard"
 theme = "Golgoth"
