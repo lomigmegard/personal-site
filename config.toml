@@ -1,7 +1,7 @@
 baseurl = "https://lomig.ch/"
 languageCode = "en-US"
 title = "Lomig Mégard"
-theme = "Golgoth"
+theme = "golgoth"
 
 # The string {year} will be replaced with the current year
 copyright = "© Lomig Mégard {year}"
